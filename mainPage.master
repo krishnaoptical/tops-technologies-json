@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mainPage.master.cs" Inherits="mainPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #0094ff;">
+    <form id="form1" runat="server">
+        <div style="background-color: whitesmoke; color: black">
+            <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">Add New</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton2" PostBackUrl="~/showResult.aspx" runat="server">Result</asp:LinkButton>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
